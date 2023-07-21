@@ -71,9 +71,42 @@ nav li a {
 }
 
 .banner-img {
-    width: 1440px;
-    height: 700px;
+    width: 100%;
     border-radius: 8px;
     border: none;
     margin-top: 60px;
+}
+
+
+/* responsive media queries */
+/* mobile device */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .btn-primary{
+        margin-left: 60px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 10px 10px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .btn-primary{
+        margin-left: 300px;
+    }
+
 }
